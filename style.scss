@@ -1,0 +1,83 @@
+@import "bootstrap/scss/bootstrap";
+
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/regular";
+
+body {
+
+  height: 100vh;
+  background: linear-gradient(-45deg, #d5a223, #99d523, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 45s ease infinite;
+  -moz-animation: Gradient 45s ease infinite;
+  animation: Gradient 45s ease infinite;
+
+  main.container {
+
+    div.blurred-box {
+
+      min-width: 70%;
+      background: rgba(0,0,0,0.25);
+
+      &:after {
+
+        content: '';
+        box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+        filter: blur(10px);
+
+      }
+
+      .social-icon {
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
